@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>tela</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input [type]="hidepass ? 'text' : 'password'">
+  </ion-input>
+  
+  <!-- 
+  Botão que ao ser pressionado, executa o método togglePasswordFieldType
+  que por sua vez inverte o valor da propriedade isTextFieldType
+  -->
+  <button (click)="hidepass()" >
+    <!--
+    Os valores 'eye-off' e 'eye' são nomes de ionicons.
+    -->
+    <ion-icon [name]="hidepass ? 'eye-off' : 'eye'"></ion-icon>
+  </button> 
+</ion-content>

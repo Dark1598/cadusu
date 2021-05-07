@@ -1,0 +1,7 @@
+{
+  "name": "cadusu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
