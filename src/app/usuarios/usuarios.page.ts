@@ -48,11 +48,11 @@ export class UsuariosPage implements OnInit {
       });
     });
   }//final do método carregar
-  editar(id, nome, usuario, senha, nivel){
-    this.route.navigate(['/add-usuario/' + id + '/' + nome + '/' + usuario + '/' + senha + '/' + nivel]);
+  editar(id, nome, email, senha, nivel){
+    this.route.navigate(['/add-usuario/' + id + '/' + nome + '/' + email + '/' + senha + '/' + nivel]);
   }//final do método Editar
-  mostrar(id, nome, usuario, senha, nivel){
-    this.route.navigate(['/mostrar-usuario/' + id + '/' + nome + '/' + usuario + '/' + senha + '/' + nivel]);
+  mostrar(id, nome, email, senha, nivel){
+    this.route.navigate(['/mostrar-usuario/' + id + '/' + nome + '/' + email + '/' + senha + '/' + nivel]);
   }//final do método Mostrar
   excluir(id){
     return new Promise(resolve =>{
